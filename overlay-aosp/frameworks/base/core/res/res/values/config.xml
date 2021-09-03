@@ -138,6 +138,4 @@
     <!-- FOD icon dim-->
     <bool name="config_targetUsesInKernelDimming">true</bool>
 
-    <!-- Display has physical cutout -->
-    <bool name="config_physicalDisplayCutout">true</bool>
 </resources>
