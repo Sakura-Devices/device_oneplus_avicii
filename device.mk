@@ -148,9 +148,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # Input
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/gf_input.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/gf_input.idc \
-    $(LOCAL_PATH)/keylayout/gf_input.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gf_input.kl
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/idc/gf_input.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/gf_input.idc \
+#    $(LOCAL_PATH)/keylayout/gf_input.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gf_input.kl
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -223,7 +223,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.oneplus_lito
+    vendor.lineage.touch@1.0-service.oneplus_lito
 
 # tri-state-key
 PRODUCT_PACKAGES += \
@@ -232,7 +232,7 @@ PRODUCT_PACKAGES += \
 
 # Trust HAL
 PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
+    vendor.lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
