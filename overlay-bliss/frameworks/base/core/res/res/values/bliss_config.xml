@@ -24,4 +24,7 @@
         <item>org.lineageos.lineageparts.gestures.KeyHandler</item>
         <item>org.lineageos.settings.device.KeyHandler</item>
     </string-array>
+
+    <!-- Whether to show a custom view for FOD -->
+    <bool name="config_needCustomFODView">true</bool>
 </resources>

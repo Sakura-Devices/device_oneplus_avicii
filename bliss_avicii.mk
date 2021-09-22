@@ -22,17 +22,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # PixelExperience Properties
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_USES_CUSTOM_AVB_KEY := true
 
-PRODUCT_NAME := aosp_avicii
+# FOD animations
+TARGET_WANTS_FOD_ANIMATIONS := true
+
+PRODUCT_NAME := bliss_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := AC2001
+PRODUCT_MODEL := AC2003
 CUSTOM_DEVICE := Nord
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
