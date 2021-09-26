@@ -1,18 +1,20 @@
 [
   {
     "repository": "device_oneplus_sm7250-common",
-    "target_path": "device/oneplus/sm7250-common"
+    "target_path": "device/oneplus/sm7250-common",
+    "branch": "eleven",
+    "remote": "Sakura-Devices"
   },
   {
-    "repository"  : "vendor_oneplus_avicii",
+    "repository"  : "hmtheboy154/vendor_oneplus_avicii",
     "target_path" : "vendor/oneplus/avicii",
     "branch"      : "eleven",
-    "remote"      : "pixel-devices-blobs"
+    "remote"      : "gitlab"
   },
   {
-    "repository": "vendor_oneplus-firmware",
+    "repository": "hmtheboy154/vendor-oneplus-firmware",
     "target_path": "vendor/oneplus/firmware",
     "branch": "eleven",
-    "remote": "pixel-devices-blobs"
+    "remote": "gitlab"
   }
 ]
