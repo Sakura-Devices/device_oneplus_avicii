@@ -39,6 +39,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    vendor.oneplus.hardware.camera@1.0.vendor:64 \
+    vendor.qti.hardware.camera.device@1.0.vendor:64
+
 # Device init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom
@@ -46,6 +51,9 @@ PRODUCT_PACKAGES += \
 # OPFeature
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list
+
+# OnePlus apps
+$(call inherit-product-if-exists, vendor/oneplus/apps/avicii/config.mk)
 
 # tri-state-key
 PRODUCT_PACKAGES += \
