@@ -57,7 +57,6 @@ $(call inherit-product-if-exists, vendor/oneplus/apps/avicii/config.mk)
 
 # tri-state-key
 PRODUCT_PACKAGES += \
-    KeyHandler \
     tri-state-key_daemon
 
 PRODUCT_SHIPPING_API_LEVEL := 29
