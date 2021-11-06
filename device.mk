@@ -22,6 +22,9 @@
 # definition file).
 #
 
+# OnePlus Camera
+$(call inherit-product-if-exists, vendor/oneplus/apps/avicii/config.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
